@@ -23,7 +23,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<b></p>
 <ul class="skill-list">
 	<li></li>
 	<li>Responsive (Mobile First)</li>
-	<li><img src=/assets/images/silver_medal.png> May 2021 - 2nd place on BugCrowd Global Leaderboard</li>
+	<li><img src=/assets/images/silver_medal.png style="width: 51.2px; height: 51.2px"/> May 2021 - 2nd place on BugCrowd Global Leaderboard</li>
 	<li>Css Frameworks (Bootstrap, Foundation)</li>
 	<li>Javascript (Design Patterns, Testes)</li>
 	<li>NodeJS</li>

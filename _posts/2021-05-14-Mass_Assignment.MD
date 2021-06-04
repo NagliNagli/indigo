@@ -14,7 +14,7 @@ author: galnagli
 description: Exploiting Mass Assignment vulnerabilities in the wild
 ---
 
-![preview](assets/images/Mass-Assignment.jpg)
+![preview](/assets/images/Mass-Assignment.jpg)
 
 ## General
 

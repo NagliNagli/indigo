@@ -45,7 +45,7 @@ Indeed I was proved that this is the case when I found 2 IDOR's which rewarded m
 
 Examination of the page:
 
-![inital_page](/images/initial_page.png)
+![inital_page](/assets/images/initial_page.png)
 
 The page reflected some of the headers from my request, including the referer header, useragent, timestamp and IP address field which I could confirm that is mine.
 
@@ -57,7 +57,7 @@ After the scan finished there were some newly discovered query params which led 
 
 A few minutes later I noticed that the scan returned to me **Cache poisoning 3** Flag, indicating that it's firm that there is Web Cache Poisoning issue on the page.
 
-![cache_alert](/images/cache_alert.png)
+![cache_alert](/assets/images/cache_alert.png)
 
 I started with a quick fingerprinting checks, and saw that the target is running on CloudFlare, and that my requests are indeed being returned with the **CF-Cache-Status: HIT** response, which means that the response to the page will be presented from the cache.
 
@@ -83,13 +83,13 @@ First thing which came to my mind is what will happen if I add
 
 to the X-Forwarded-For header? will it reflect in the response?
 
-![hit_request](/images/hit_request.png)
+![hit_request](/assets/images/hit_request.png)
 
 And it was the case, I managed to inject XSS payload from my header request, which got reflected in the page and got **HIT** indication fromm the **CF-Cache-Status header**.
 
 In order to verify that the content is being served from the cache, we should initiate a second request without the **X-Forwarded-For** Header this time, and to see if the response remains the same.
 
-![2nd_req](/images/2nd_req.png)
+![2nd_req](/assets/images/2nd_req.png)
 
 It's a success, I managed to cache the XSS to other participants (In this case on my WAN), which means that every device which was connected to my router at that time was infected with stored XSS when he navigated to the infected endpoint.
 
@@ -109,7 +109,7 @@ https://subdomains.example.com/somefolder/someendpoint/nagli.css
 
 As CloudFlare will happily cache css files, it had no problem with my exploitation payload.
 
-![cache_xss](/images/cache_xss.png)
+![cache_xss](/assets/images/cache_xss.png)
 
 Eventually I have stored XSS vulnerability which can be used to exfilitrate cookies from the main domain, which would lead to account takeover from the main site upon navigating to the cached endpoint.
 
@@ -125,7 +125,7 @@ Also, as it was only affecting my nearby area and devices connected to my Wifi s
 
 Reading this great [Cache Poisoning Report](https://hackerone.com/reports/303730) gave me some idea about explaining the nature of the problem in clearer manenr, and explaining the reproduction steps to it's best way.
 
-![poisoning_areas](/images/poisoning_areas.png)
+![poisoning_areas](/assets/images/poisoning_areas.png)
 
 I have included those lines of wisdom which explain really well the idea behind the cdn "regions", and where as attackers we can craft our PoC to attack and target other regions.
 
@@ -142,7 +142,7 @@ Steps to Reproduce:
 
 Those steps did the job just fine, and managed to get my report triaged as P2.
 
-![reward](/images/reward.png)
+![reward](/assets/images/reward.png)
 
 ### Timeline
 

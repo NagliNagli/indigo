@@ -15,7 +15,7 @@ description: Cache Poisoning Exploitation in the wild - discovery to reward.
 
 **Poisoning your Cache for 1000$ - Approach to Exploitation Walkthrough**
 
-![preview](assets/images/cache-poison.jpg)
+![preview](/assets/images/cache-poison.jpg)
 
 ## General
 

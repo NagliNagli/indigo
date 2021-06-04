@@ -51,7 +51,7 @@ Binding client provided data (e.g., JSON) to data models, without proper propert
 
 To understand the attack vector better, let's take a look at the following image: 
 
-![Mass_assignment_example](/images/Mass_Example.png)
+![Mass_assignment_example](/assets/images/Mass_Example.png)
 
 [credit](https://global-uploads.webflow.com/5ffc6b565fe11e76be021da1/602eda3ff4abd10d2e127f9c__56aRngXYuute5buEI-7RY2kkbixkjMPYxw1_dX0D_t863mTh6kwzlZTCKrOuNGpmKVRg-1_hWgXDiqk4-ddN5bV8ZM-lkvfWgb2FOnN7WCGithAQ9Es-pl6x-s6UQ_NWgHSEMAu.png)
 
@@ -89,7 +89,7 @@ There are 2 main vectors to find those, which can be divided into "Blackbox" and
 
 As for the "Blackbox" testing, we can use Burp's [Param Miner](https://portswigger.net/bappstore/17d2949a985c4b7ca092728dba871943) extension, when we have HTTP request which sends data within JSON format, we are being presented with the "Guess JSON parameters" option, which will bruteforce for common JSON params and see if it affects the server response, by issuing the Param Miner probe we can guess for those hidden sensitive fields.
 
-![json_param](/images/json_param.png)
+![json_param](/assets/images/json_param.png)
 
 ### Whitebox Approach
 
@@ -115,7 +115,7 @@ https://example.com/app/users/addNew
 
 Therfore I invited myself for an additional account with a "Viewer" permissions only, so I could conduct the testing in an efficent manner.
 
-![user-invite](/images/user-invite.png)
+![user-invite](/assets/images/user-invite.png)
 
 Logging into the new user I have created, I went to my personal profile page, located at
 
@@ -129,7 +129,7 @@ We were presented with 3 fields only
 Name, Email and Language
 ```
 
-![user-profile](/images/user-profile.png)
+![user-profile](/assets/images/user-profile.png)
 
 Clicking on the "Save Changes" button presented us with the following HTTP request:
 
@@ -194,7 +194,7 @@ To the JSON object.
 
 Upon issuing the POST request I could observe the 200 OK response, with the OK value - indiciating that the exploitation worked.
 
-![response](/images/working_exploit.png)
+![response](/assets/images/working_exploit.png)
 
 And so it was, we managed to escalate from normal user to administrator account with a simple POST request on the user profile edit area.
 
@@ -244,9 +244,9 @@ I was the only one who reported this specific privilege escalation issue levergi
 
 It had a CVSS score of 8.1 and had received additional criticality bonus.
 
-![bonus](/images/critical_bonus.png)
+![bonus](/assets/images/critical_bonus.png)
 
-![reward](/images/mass_reward.png)
+![reward](/assets/images/mass_reward.png)
 
 
 ### Report Timeline

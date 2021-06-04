@@ -14,7 +14,7 @@ picture: /assets/images/profile3.png
 url: https://galnagli.com
 # your url: https://USERNAME.github.io
 
-permalink: /:title/
+permalink: /indigo/:title/
 
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'

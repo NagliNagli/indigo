@@ -15,7 +15,21 @@
         <link rel='shortcut icon' type='image/x-icon' href='/assets/images/cartoon_profile.png'/>
         <link href='/assets/global/style.css' rel='stylesheet' type='text/css'>
         <link href='/assets/index/style.css' rel='stylesheet' type='text/css'>
+        <!-- Matrix -->
+        <style>
+      body {
+        background: black;
+        overflow: hidden;
+        margin: 0;
+      }
+
+      canvas {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
     </head>
+    
     <body>
         
         <!-- the layer above the full screen particle.js  -->
@@ -65,7 +79,25 @@
 
         </div>
         
-        <canvas id=q> // matrix test
+        <!-- Matrix test -->
+        
+         
+    <!--
+      This is an implementation of the green code seen in The Matrix film and video game franchise.
+      This project demonstrates five concepts:
+          1. Drawing to floating point frame buffer objects, or 'FBO's,
+             for performing computation and post-processing
+          2. GPU-side computation, with a fragment shader
+             updating two alternating FBOs
+          3. Rendering crisp "vector" graphics, with a multiple-channel
+             signed distance field (or 'MSDF')
+          4. Creating a blur/bloom effect from a texture pyramid
+          5. Color mapping with noise, to hide banding
+      For more information, please visit: https://github.com/Rezmason/matrix
+     -->
+    <!-- <script src="lib/regl.min.js"></script> -->
+    <script src="lib/regl.js"></script>
+    <script type="module" src="assets/main.js"></script>
             
         <!-- the full screen particle.js in the background -->
         <div id="particles-js"></div>

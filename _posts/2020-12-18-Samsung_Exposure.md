@@ -15,7 +15,7 @@ description: Broken Access Control leads to Application Accounts Takeovers.
 
 **Broken Access Control on samsung.com subdomain leads to Mass Account Takeover of Samsung employees application accounts**
 
-![preview](/images/Samsung_teaser.png)
+![preview](/assets/images/Samsung_teaser.png)
 
 ## Greetings
 
@@ -28,13 +28,13 @@ As they state that only vulnerabilities affecting the samsung mobile/tv team ser
 
 ### Reconnaissance
 
-![recon image](/images/recon1.jpg)
+![recon image](/assets/images/recon1.jpg)
 
 As you might have read from my previous blog post, there is no magic when it comes to reconnaissance.
 
 Utilizing my bash script which integrates the known open source tools for subdomain discovery presented 853 alive probed subdomain results
 
-![recon](/images/853.png)
+![recon](/assets/images/853.png)
 
 The nuclei scan for known vulnerabilities didn't return any significant result, so it was time to dive in the subdomains and look manually for intersting information.
 
@@ -46,12 +46,12 @@ Eventually this led me to explore few subdomains which consisted those keywords,
 
 Navigating to https://redacted.samsung.com/ presented us with a static web page with a small login button up top.
 
-![recon](/images/static_page.png)
+![recon](/assets/images/static_page.png)
 
 Observing the login functioniallity was just utilizing the SSO of samsung.com, I was redirected to account.samsung.com and had to enter my account information,
 and later on redirected to fill up another few details at the origin of the request.
 
-![login](/images/flow_video.gif)
+![login](/assets/images/flow_video.gif)
 
 We are unauthorized to access the data which the subdomain servers, probably because we are not samsung employees and as we need to wait for the manager approval.
 
@@ -71,7 +71,7 @@ As there were 600 intersting links to look on, doing so manually wouldn't be eff
 
 Supplying the list to ffuf we would notice several intersting endpoints which return 200, so this narrowed the list to be compatible with manual observation.
 
-![endpoint](/images/endpoint.png)
+![endpoint](/assets/images/endpoint.png)
 
 The following endpoint proved to be critically severe (It's fixed now):
 
@@ -106,17 +106,17 @@ The page supplied every user which used the login form with his account, with th
 
 There were approximatly 200 users, including administrators.
 
-![samsung_creds](/images/samsung_creds.gif)
+![samsung_creds](/assets/images/samsung_creds.gif)
 
 Now we need to figure out how the authCode is implemented on the application we are testing?
 
 After issuing the login functioniallity from account.samsung.com we can observe that the following request is being initiated:
 
-![code](/images/code.png)
+![code](/assets/images/code.png)
 
 Replacing dumped auth code with the one I have issued allowed me to bypass the restriction and access the application as the victim account.
 
-![K.O](/images/giphy.webp)
+![K.O](/assets/images/giphy.webp)
 
 ### Impact
 
@@ -136,9 +136,9 @@ The issue was fixed by samsung's security team while issuing a 403 error when tr
 - [ ] Report has been moved from samsung mobile department as its not a service being operated by them - 15.12.2020
 - [ ] Recieved a "Thanks" letter from security@samsung.com team, which are not rewarding any bounties for findings - 17.12.2020
 
-![lucky](/images/lucky.jpeg)
+![lucky](/assets/images/lucky.jpeg)
 
-![thanks](/images/thanks.png)
+![thanks](/assets/images/thanks.png)
 
 ### Conclusion
 
@@ -157,6 +157,6 @@ You can find me on:
 - [ ] BugCrowd: <https://bugcrowd.com/Nagli>
 - [ ] Linkedin: <https://www.linkedin.com/in/galnagli>
 
-![thanks2](/images/seal.jpg)
+![thanks2](/assets/images/seal.jpg)
 
 

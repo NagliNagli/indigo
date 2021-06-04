@@ -9,9 +9,24 @@ header:
   teaser: /images/cache-poison.jpg
 --- 
 
+---
+title: "Poisoning your Cache for 1000$ - Approach to Exploitation Walkthrough"
+layout: post
+date: 2021-05-14 18:00
+image: https://galnagli.com/images/cache-poison.jpg
+headerImage: false
+tag:
+- Cache Poisoning
+- BugCrowd
+- Bug Bounty
+category: blog
+author: galnagli
+description: Cache Poisoning Exploitation in the wild - discovery to reward.
+---
+
 **Poisoning your Cache for 1000$ - Approach to Exploitation Walkthrough**
 
-![preview](/images/cache-poison.jpg)
+![preview](assets/images/cache-poison.jpg)
 
 ## General
 

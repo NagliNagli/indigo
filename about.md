@@ -18,12 +18,12 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<b></p>
 
-<h2>Skills</h2>
+<h2>Achievements</h2>
 
 <ul class="skill-list">
-	<li>HTML - Jade - Haml - Erb</li>
+	<li></li>
 	<li>Responsive (Mobile First)</li>
-	<li>CSS (Stylus, Sass, Less)</li>
+	<li><img src=/assets/images/silver_medal.png> May 2021 - 2nd place on BugCrowd Global Leaderboard</li>
 	<li>Css Frameworks (Bootstrap, Foundation)</li>
 	<li>Javascript (Design Patterns, Testes)</li>
 	<li>NodeJS</li>

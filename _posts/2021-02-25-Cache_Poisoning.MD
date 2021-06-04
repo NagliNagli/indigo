@@ -1,15 +1,4 @@
 ---
-layout: single
-title: Poisoning your Cache for 1000$ - Approach to Exploitation Walkthrough
-date: 2021-02-25
-classes: wide
-thumbnail: https://galnagli.com/images/cache-poison.jpg
-header: https://galnagli.com/images/cache-poison.jpg
-header:
-  teaser: /images/cache-poison.jpg
---- 
-
----
 title: "Poisoning your Cache for 1000$ - Approach to Exploitation Walkthrough"
 layout: post
 date: 2021-05-14 18:00

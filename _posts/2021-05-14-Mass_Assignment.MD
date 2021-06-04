@@ -1,15 +1,20 @@
 ---
-layout: single
-title: Mass Assignment exploitation in the wild - Escalating privileges in style
-date: 2021-05-14
-classes: wide
-thumbnail: https://galnagli.com/images/Mass-Assignment.jpg
-header: https://galnagli.com/images/Mass-Assignment.jpg
-header:
-  teaser: /images/Mass-Assignment.jpg
---- 
+title: "Mass Assignment exploitation in the wild - Escalating privileges in style"
+layout: post
+date: 2021-05-14 18:00
+image: https://galnagli.com/images/Mass-Assignment.jpg
+headerImage: false
+tag:
+- Mass Assignment
+- Synack
+- Critical
+- Bug Bounty
+category: blog
+author: galnagli
+description: Exploiting Mass Assignment vulnerabilities in the wild
+---
 
-![preview](/images/Mass-Assignment.jpg)
+![preview](/assets/images/Mass-Assignment.jpg)
 
 ## General
 

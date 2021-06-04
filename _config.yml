@@ -11,10 +11,10 @@ external-image: false
 picture: /assets/images/cartoon_profile.png
 
 
-url: https://galnagli.com/indigo
+url: https://galnagli.com
 # your url: https://USERNAME.github.io
 
-permalink: /indigo/:title/
+permalink: /:title/
 
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'

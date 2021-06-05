@@ -146,11 +146,11 @@ Those steps did the job just fine, and managed to get my report triaged as P2.
 
 ### Timeline
 
-- [ ] Web Cache Poisoning issue submitted - 29/01/2021
-- [ ] Triager couldn't reproduce the issue - 06/02/2021
-- [ ] Clearer reproduction steps submitted - 07/02/2021
-- [ ] Triage as P2 - 09/02/2021
-- [ ] 1000$ Reward - 09/02/2021
+- [ ]  Web Cache Poisoning issue submitted - 29/01/2021
+- [ ]  Triager couldn't reproduce the issue - 06/02/2021
+- [ ]  Clearer reproduction steps submitted - 07/02/2021
+- [ ]  Triage as P2 - 09/02/2021
+- [ ]  1000$ Reward - 09/02/2021
 
 
 ### Conclusion
@@ -161,9 +161,9 @@ I didn't try to go deep on Web Cache Poisoning as a concept in general because t
 
 Some Social Links:
 
-- [ ] Twitter: <https://twitter.com/naglinagli>
-- [ ] HackerOne: <https://hackerone.com/nagli>
-- [ ] Bugcrowd: <https://bugcrowd.com/Nagli>
-- [ ] Linkedin: <https://www.linkedin.com/in/galnagli>
+- [ ]  Twitter: <https://twitter.com/naglinagli>
+- [ ]  HackerOne: <https://hackerone.com/nagli>
+- [ ]  Bugcrowd: <https://bugcrowd.com/Nagli>
+- [ ]  Linkedin: <https://www.linkedin.com/in/galnagli>
 
 Credit to CloudFlare for the Poisoning image.

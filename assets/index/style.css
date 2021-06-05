@@ -1,6 +1,6 @@
 body {
     background: #222;
-    color: #fff;
+    color:	#000000;
     font-family: 'Anonymous Pro', monospace;
     font-size: 20px;
 
@@ -28,5 +28,5 @@ body {
 }
 
 .btn-outline-secondary {
-    color: #fff;
+    color:	#000000;
 }

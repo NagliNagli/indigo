@@ -7,7 +7,7 @@ description: My online portfolio
 
 # if it's an external image, update below for true
 # better with square images
-external-image: false
+external-image: true
 picture: /assets/images/cartoon_profile.png
 
 
@@ -25,7 +25,7 @@ permalink: /:title/
 
 # if you don't want comments in your posts, leave categories empty
 disqus:
-  shortname: mydisqus # enter this from your disqus account
+  shortname: disqus_eyx7AlIbUq # enter this from your disqus account
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
@@ -37,7 +37,7 @@ authors:
   galnagli:
     name: Gal Nagli
     bio: A Man who enjoys the art of study, breaking stuff when I can.
-    external-image: false
+    external-image: true
     picture: /assets/images/cartoon_profile.png
     twitter: naglinagli
 
@@ -46,9 +46,9 @@ authors:
 # normal = 560px / large = 810px
 width: large
 
-# if you do/don't need pagination, toggle 'enabled' between true/false below
+# if you do/don't need pagination, toggle 'enabled' between true/true below
 pagination:
-  enabled: false
+  enabled: true
   sort_reverse: true # display recent posts first
   title: ":title" # Changing this will mess up the header display logic
   per_page: 5
@@ -86,7 +86,7 @@ defaults:
     values:
       # setting all post to not hidden by default,
       # can be overridden in the front matter for a specific post
-      hidden: false
+      hidden: true
 
 plugins:
   - jekyll-seo-tag

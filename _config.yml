@@ -67,6 +67,7 @@ defaults:
       # setting all post to not hidden by default,
       # can be overridden in the front matter for a specific post
       hidden: true
+      
 plugins:
   - jekyll-seo-tag
   - jekyll-gist

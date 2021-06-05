@@ -204,7 +204,7 @@ You could have noticed that it was easier to find the sensitive hidden param fro
 
 Concluding the exploitation above, those were the steps taken as it was stated in the original report:
 
-- [x] Navigate to 
+- [x]  Navigate to 
 
 ```
 https://example.com/app/users/addNew
@@ -212,7 +212,7 @@ https://example.com/app/users/addNew
 
 and add a new account with limited permissions
 
-- [x] Log in with the new user account and navigate to
+- [x]  Log in with the new user account and navigate to
 
 ```
 https://example.com/app/profile
@@ -220,13 +220,13 @@ https://example.com/app/profile
 
 Click on the "Save changes button" and capture the request
 
-- [x] Add to the json scheme the following:
+- [x]  Add to the json scheme the following:
 
 ```
 "updates":{"name":"hello","email":"your email","roles":["administrator"],"enabled":true}}
 ```
 
-- [x] The user account has successfully escalated his privileges to administrator's one.
+- [x]  The user account has successfully escalated his privileges to administrator's one.
 
 ### Recommended fix
 
@@ -251,9 +251,9 @@ It had a CVSS score of 8.1 and had received additional criticality bonus.
 
 ### Report Timeline
 
-- [x] April 15th 14:00 GMT - Report Submitted
-- [x] April 16th 00:20 GMT - Report accepted and Rewarded
-- [x] April 16th 12:44 GMT - Critical bonus awarded
+- [x]  April 15th 14:00 GMT - Report Submitted
+- [x]  April 16th 00:20 GMT - Report accepted and Rewarded
+- [x]  April 16th 12:44 GMT - Critical bonus awarded
 
 
 ## Thanks for sticking out!

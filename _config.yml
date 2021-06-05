@@ -24,10 +24,6 @@ permalink: /:title/
 # analytics-piwik-id: 1
 
 # if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: disqus_eyx7AlIbUq # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
-
 # if you don't have any of social below, comment the line
 #twitter: naglinagli
 #linkedin: galnagli

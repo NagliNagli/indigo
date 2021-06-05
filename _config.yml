@@ -1,6 +1,6 @@
 # main text of home
 name: Gal Nagli
-bio: AppSec @enso.security | Bug Bounty Hunter | B.Sc Computer Science Student
+bio: AppSec @enso.security | Bug Bounty Hunter | B.Sc Computer Science Student -> Blog is broken for the meanwhile
 
 # twitter summary info
 description: My online portfolio
@@ -87,7 +87,7 @@ defaults:
     values:
       # setting all post to not hidden by default,
       # can be overridden in the front matter for a specific post
-      
+      hidden: true
 plugins:
   - jekyll-seo-tag
   - jekyll-gist

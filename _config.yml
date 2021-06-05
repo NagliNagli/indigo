@@ -31,7 +31,7 @@ disqus:
 # if you don't have any of social below, comment the line
 #twitter: naglinagli
 #linkedin: galnagli
-#github: naglinagli
+github: naglinagli
 
 authors:
   galnagli:
@@ -95,9 +95,6 @@ plugins:
   - jemoji
   - jekyll-admin
   - jekyll-paginate-v2
-
-jekyll-mentions:
-  base_url: https://github.com
 
 compress_html:
   ignore:

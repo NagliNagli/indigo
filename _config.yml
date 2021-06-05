@@ -27,7 +27,7 @@ github: naglinagli
 
 authors:
   galnagli:
-@@ -96,9 +96,6 @@ plugins:
+  plugins:
   - jekyll-admin
   - jekyll-paginate-v2
 

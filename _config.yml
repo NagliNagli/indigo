@@ -7,7 +7,7 @@ description: My online portfolio
 
 # if it's an external image, update below for true
 # better with square images
-external-image: true
+external-image: false
 picture: /assets/images/cartoon_profile.png
 
 
@@ -37,7 +37,7 @@ authors:
   galnagli:
     name: Gal Nagli
     bio: A Man who enjoys the art of study, breaking stuff when I can.
-    external-image: true
+    external-image: false
     picture: /assets/images/cartoon_profile.png
     twitter: naglinagli
 
@@ -48,7 +48,7 @@ width: normal
 
 # if you do/don't need pagination, toggle 'enabled' between true/true below
 pagination:
-  enabled: true
+  enabled: false
   sort_reverse: true # display recent posts first
   title: ":title" # Changing this will mess up the header display logic
   per_page: 5
@@ -58,7 +58,6 @@ pagination:
 projects: true
 
 # if you don't need "about" or "blog", comment them out below
-about: true
 blog: true
 
 # do you want to show the "read time" of the posts?
@@ -87,7 +86,8 @@ defaults:
     values:
       # setting all post to not hidden by default,
       # can be overridden in the front matter for a specific post
-      hidden: true
+      hidden: false
+
 plugins:
   - jekyll-seo-tag
   - jekyll-gist

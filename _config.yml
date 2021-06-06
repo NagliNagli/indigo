@@ -8,7 +8,7 @@ description: My online portfolio
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: /assets/images/cartoon_profile.png
+picture: /assets/images/cartoon_profile.jpeg
 
 
 url: https://galnagli.com
@@ -38,7 +38,7 @@ authors:
     name: Gal Nagli
     bio: A Man who enjoys the art of study, breaking stuff when I can.
     external-image: false
-    picture: /assets/images/cartoon_profile.png
+    picture: /assets/images/cartoon_profile.jpeg
     twitter: naglinagli
 
 # do you want a larger site? change the option below

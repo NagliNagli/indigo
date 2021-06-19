@@ -8,8 +8,8 @@ description: My online portfolio
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: /assets/images/cartoon_profile.jpeg
-
+#picture: /assets/images/cartoon_profile.jpeg
+picture: /assets/images/nagli.jpeg
 
 url: https://galnagli.com
 # your url: https://USERNAME.github.io
@@ -38,7 +38,8 @@ authors:
     name: Gal Nagli
     bio: A Man who enjoys the art of study, breaking stuff when I can.
     external-image: false
-    picture: /assets/images/cartoon_profile.jpeg
+    #picture: /assets/images/cartoon_profile.jpeg
+    picture: /assets/images/nagli.jpeg
     twitter: naglinagli
 
 # do you want a larger site? change the option below

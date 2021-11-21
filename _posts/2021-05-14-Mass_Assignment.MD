@@ -18,15 +18,15 @@ description: Exploiting Mass Assignment vulnerabilities in the wild
 
 ## General
 
-As I have been accepted to Synack's Red Team at the beginning of march, the opportunity emerged required me and other bounty hunters to conduct a "mental shift", as most of the lucrative bounty programs on the public platforms will be the wildcard scoped ones, it's mostly the contrary while hunting on Synack.
+**As I have been accepted to Synack's Red Team at the beginning of march, the opportunity emerged required me and other bounty hunters to conduct a "mental shift", as most of the lucrative bounty programs on the public platforms will be the wildcard scoped ones, it's mostly the contrary while hunting on Synack.**
 
 Working with the model of "QR" periods, most hunters will receive 2~3 new application testing invites each week which starts with 8 hours Quallity Rule, meaning it's not about being the first to report the issue, it's about the best report and as many vulnerable parameters invovled.
 
 those invites mostly invlove a post-authentication webapp testing for a certain functioniality of big organizations.
 
-As mostly conduct the first security engagement of the supplied application, it often exposes some unique vulnerabilities and attack vectors to explore.
+As we as SRT's mostly conduct the first security engagement of the supplied application, it often exposes some unique vulnerabilities and attack vectors to explore.
 
-During one of those engagements I managed to find a Mass Assignment vulnerability, which helped me escalate privileges from normal user without any permissions to a fully permissive administrator account.
+During one of those engagements I managed to find a Mass Assignment vulnerability, which helped me escalate privileges from normal user without any permissions to a fully permissive administrator account.**
 
 
 

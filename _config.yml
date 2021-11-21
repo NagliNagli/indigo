@@ -5,6 +5,7 @@ bio: AppSec @enso.security | Bug Bounty Hunter | B.Sc Computer Science Student
 # twitter summary info
 description: My online portfolio
 
+dark-theme: true
 # if it's an external image, update below for true
 # better with square images
 external-image: false
